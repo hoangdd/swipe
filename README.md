@@ -108,6 +108,7 @@ Swipe can take an optional second parameter – an object of key/value settings:
 | **startSlide**      | Integer  | 0       | index position at which Swipe should start.                                                                                                                                                                      |
 | **speed**           | Integer  | 300     | speed of prev and next transitions in milliseconds.                                                                                                                                                              |
 | **auto**            | Integer  | 0       | when specified, start an auto-playing slideshow (time in milliseconds between slide change).                                                                                                                     |
+| **peek**            | Integer  | 0       | the distance value of the next and previous viewports which have to peek in the current view. Accepts number and pixels as a string.                                                                                                                     |
 | **continuous**      | Boolean  | true    | create an infinite feel with no endpoints.                                                                                                                                                                       |
 | **autoRestart**     | Boolean  | false   | auto restart slideshow after user's touch event or next/prev calls.                                                                                                                                              |
 | **disableScroll**   | Boolean  | false   | prevent any touch events on this container from scrolling the page.                                                                                                                                              |
@@ -124,6 +125,7 @@ window.mySwipe = new Swipe(document.getElementById('slider'), {
   startSlide: 0,
   speed: 400,
   auto: 3000,
+  peek: 30,
   draggable: false,
   continuous: true,
   disableScroll: false,
